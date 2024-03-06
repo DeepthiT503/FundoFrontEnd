@@ -1,0 +1,14 @@
+
+<div class="note-list">
+    <div>
+        <app-createnote  (updateList)="updateNotesList($event)"></app-createnote>
+    </div>
+    <div *ngFor="let note of notesList | searchNote : searchText" class="note-item" style="display: inline-block;flex-wrap: wrap;  ">
+
+        <app-notecard [noteDetails]="note" [notesContainer]='"notes"' (updateList)="updateNotesList($event)"></app-notecard>
+    </div>
+</div>
+
+
+<!-- <app-notecard [noteDetails]="note"  (updateList)="updateNotesList($event)" ></app-notecard>
+<app-createnote class="con" (updateList)="updateNotesList($event)" ></app-createnote> -->

@@ -1,0 +1,31 @@
+<div class="nav">
+<mat-drawer-container class="example-container" [hasBackdrop]="false" >
+  <mat-drawer #drawer [mode]="'over'" [opened]="drowerState" class="navbar">
+    <div class="icons">
+      <mat-icon svgIcon="note-icon" aria-hidden="false" aria-label="Notes Icon"> </mat-icon> 
+      <span routerLink="/dashboard/notes">Notes</span>
+      </div>
+      <div class="icons">
+        <mat-icon svgIcon="remainder-icon" aria-hidden="false" aria-label="Remainder Icon"> </mat-icon>
+        <span>Remainder</span>
+      </div>
+      <div class="icons">
+        <mat-icon svgIcon="edit-icon" aria-hidden="false" aria-label="Edit Icon "> </mat-icon>
+        <span>Edit Labels</span>
+      </div>
+     <div class="icons">
+      <mat-icon svgIcon="archive-icon" aria-hidden="false" aria-label="Archive Icon "> </mat-icon>
+      <span routerLink="/dashboard/archive">Archive</span>
+      </div>
+    <div class="icons">
+      <mat-icon svgIcon="trash-icon" aria-hidden="false" aria-label="trash Icon "> </mat-icon>
+      <span routerLink="/dashboard/trash">Trash</span>
+     </div>
+  </mat-drawer>
+  <mat-drawer-content class="side-content">
+    
+   <router-outlet></router-outlet>
+
+  </mat-drawer-content>
+</mat-drawer-container>
+</div>

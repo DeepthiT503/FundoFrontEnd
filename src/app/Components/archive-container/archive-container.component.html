@@ -1,0 +1,6 @@
+<div class="note-list">
+    <div *ngFor="let note of archiveNoteList  | searchNote : searchText" class="note-item">
+        <app-notecard [noteDetails]="note" [notesContainer]='"archive"'  (updateList)="updateArchiveList($event)" ></app-notecard>
+
+    </div>
+</div>

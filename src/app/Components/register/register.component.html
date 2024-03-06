@@ -1,0 +1,54 @@
+<div style="display:flex; flex-direction:column; gap:20px; align-items:center; justify-content:center; width:100%; height:100vh; ">
+<div  style=" border:1px solid black; border-radius:4px; gap:40px; padding:10px; display:flex; align-items:center; justify-content:center; width:40%;">
+<form [formGroup]="registerForm" class="form-container"style="gap:20px;">
+    <div class="container1">
+        <span style="color:orange; font-size:30px;">Fundo</span>
+        <span style=" font-size:25px;">Create your Fundo Account</span>
+    </div>
+
+    <div class="container2">
+        <mat-form-field appearance="outline">
+            <input matInput  formControlName="firstName" placeholder="First Name">
+            <mat-error *ngIf="submitted && f['firstName']?.hasError('required')">firstName is  required</mat-error>
+        </mat-form-field> 
+        <mat-form-field appearance="outline">
+            <input matInput formControlName="lastName" placeholder="Last Name">
+            <mat-error *ngIf="submitted && f['lastName']?.hasError('required')">lastName is required</mat-error>
+        </mat-form-field>            
+    </div>
+    <div class="container3" style="margin-bottom: 25px;" >
+        <mat-form-field appearance="outline">
+            <input matInput formControlName="email" placeholder="Username">
+            <mat-error *ngIf="submitted && f['email']?.hasError('required')">Username required</mat-error>
+        </mat-form-field>                
+    </div>
+    <div class="container2">
+        <mat-form-field appearance="outline">
+            <input matInput formControlName="password" placeholder="Password">
+            <mat-error *ngIf="submitted && f['password']?.hasError('required')"> Password is required </mat-error>       
+        </mat-form-field> 
+
+        <mat-form-field appearance="outline">
+            <input matInput formControlName="confirmPassword" placeholder="Confirm">
+            <mat-error *ngIf="submitted && f['confirmPassword']?.hasError('required')"> ConfirmPassword is required </mat-error>       
+        </mat-form-field>                
+    </div>
+    
+    <div class="btn" style="margin-top:20px; margin-bottom: 20px;">     
+        <button mat-raised-button  matTooltip style="background-color: white; color:blue; border:0px; ">Sign in instead</button>
+        <button  (click)="handleRegister()"  mat-raised-button  matTooltip style="background-color:blue; color:white;">Register</button>
+    </div> 
+          
+</form>
+
+<div style="display:flex; align-items:center;">
+    <img src="assets\image\img" alt="image">
+</div>
+
+</div>
+<div class="footer">
+    <span>Help</span>
+    <span>Privacy</span>
+    <span>Terms</span>
+</div>   
+</div>

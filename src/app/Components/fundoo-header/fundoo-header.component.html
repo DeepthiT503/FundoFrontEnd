@@ -1,0 +1,29 @@
+<div class="HeadContainer">
+    <div class="container">
+       
+        <mat-icon svgIcon="menu-icon" aria-hidden="false" aria-label="Menu Icon" (click)="handleDrawerState()" (focus)="handleDrawerState()"></mat-icon>
+        <div class="logo-container">
+        <img src="assets\image\img5.png" alt="image">
+        <span style="font-size: 22px; color:black; font-family: Roboto, 'Helvetica Neue', sans-serif;">Fundoo</span>     
+  </div>
+    </div>
+    
+    <div class="cont" >
+        <mat-icon svgIcon="search-icon" aria-hidden="false" aria-label="Search Icon" style="width:18px; margin-left:10px; margin-right:10px; font-weight: bold;"></mat-icon>
+        <input type="text" placeholder="Search" class="in" [(ngModel)]="searchText" (input)="updateSearchText()">    
+      </div>
+      
+<div style=" width:12%; display:flex; justify-content: space-around; align-items:center; margin-right: 50px; ">
+    <mat-icon svgIcon="refresh-icon" aria-hidden="false" aria-label="Refresh Icon"></mat-icon>   
+    <mat-icon svgIcon="list-view-icon" aria-hidden="false" aria-label="ListView Icon"></mat-icon>   
+    <mat-icon svgIcon="settings-icon" aria-hidden="false" aria-label="Settings Icon"></mat-icon> 
+</div>
+
+<div style="display:flex; align-items: center; gap:20px">
+    <mat-icon svgIcon="MoreOptions-icon" aria-hidden="false" aria-label="MoreOptions Icon"></mat-icon> 
+    <img src="assets\image\userlogo.jpg" alt="no image" class="user-logo">
+
+</div>
+</div>
+<!-- <mat-icon svgIcon="LIST_VIEW_ICON" aria-hidden="false" aria-label="list SVG icon"></mat-icon> -->
+

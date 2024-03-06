@@ -1,0 +1,57 @@
+<!-- 
+        <mat-dialog-content class="takenotes-main-cnth"  [style.background-color]="color">
+            <div class="takenote-input-1-cnt">
+                <input class="takenote-inputs-1"  placeholder="Title" [(ngModel)]="title" >
+              </div>
+            <div>
+                <textarea class="takenote-inputs-2" placeholder="Take notes"style="width:90%;word-wrap: break-word;" [(ngModel)]="description" ></textarea>
+            </div>
+
+            <div class="takenotes-icon-main-cnt" >
+                <div class="takenotes-icon-cnt">
+                    <mat-icon svgIcon="reminder-icon" aria-hidden="false" aria-label="remember SVG icon"></mat-icon>
+                    <mat-icon svgIcon="collaborator-icon" aria-hidden="false" aria-label="collaborator SVG icon"></mat-icon>
+                    <mat-icon svgIcon="color-plate-icon" [matMenuTriggerFor]="colorMenu" aria-hidden="false" aria-label="color plate SVG icon"></mat-icon>
+                    <mat-icon svgIcon="img-icon" aria-hidden="false" aria-label="img SVG icon"></mat-icon>
+                    <mat-icon svgIcon="archive-icon" (click)="handleEditNoteIconsClick('archive')" aria-hidden="false" aria-label="archive SVG icon"></mat-icon>
+                    <mat-icon svgIcon="more-icon" [matMenuTriggerFor]="moreMenu" aria-hidden="false" aria-label="more SVG icon"></mat-icon>
+                </div>
+                <mat-menu #colorMenu="matMenu" class="color-mat-menu">
+                    <div class="color-palate-cnt">    
+                        <div class="col" style="background-color: #ffffff;" matTooltip="Default" (click)="handleEditNoteIconsClick('#FFFFFF')"></div>
+                        <div class="col" style="background-color: #FAAFA8 ;" matTooltip="Coral" (click)="handleEditNoteIconsClick('#FAAFA8')"></div>
+                        <div class="col" style="background-color: #F39F76;" matTooltip="Peach" (click)="handleEditNoteIconsClick('#F39F76')"></div>
+                        <div class="col" style="background-color:#FFF8B8 ;" matTooltip="Sand" (click)="handleEditNoteIconsClick('#FFF8B8')"></div>
+                        <div class="col" style="background-color: #E2F6D3 ;" matTooltip="Mint" (click)="handleEditNoteIconsClick('#E2F6D3')"></div>
+                        <div class="col" style="background-color:#B4DDD3 ;" matTooltip="Sage" (click)="handleEditNoteIconsClick('#B4DDD3')"></div>
+                        <div class="col" style="background-color: #D4E4ED ;" matTooltip="Fog" (click)="handleEditNoteIconsClick('#D4E4ED')"></div>
+                        <div class="col" style="background-color: #AECCDC ;" matTooltip="Storm" (click)="handleEditNoteIconsClick('#AECCDC')"></div>
+                        <div class="col" style="background-color: #D3BFDB;" matTooltip="Dusk" (click)="handleEditNoteIconsClick('#D3BFDB')"></div>
+                        <div class="col" style="background-color: #F6E2DD;" matTooltip="Blossom" (click)="handleEditNoteIconsClick('#F6E2DD')"></div>
+                        <div class="col" style="background-color: #E9E3D4;" matTooltip="Clay" (click)="handleEditNoteIconsClick('#E9E3D4')"></div>
+                        <div class="col" style="background-color: #EFEFF1;" matTooltip="Chalk" (click)="handleEditNoteIconsClick('#EFEFF1')"></div>       
+                    </div>
+                </mat-menu>
+                <mat-menu #moreMenu="matMenu">
+                    <button mat-menu-item (click)="handleEditNoteIconsClick('trash')">
+                      <span>trash</span>
+                    </button>
+                    <button mat-menu-item disabled>
+                      <span>Check voice mail</span>
+                    </button>
+                    <button mat-menu-item>
+                      <span>Disable alerts</span>
+                    </button>
+                  </mat-menu>
+
+                <div class="takenotes-undo-icon" >
+                    <mat-icon svgIcon="undo-icon" aria-hidden="false" aria-label="undo SVG icon"></mat-icon>
+                    <mat-icon svgIcon="redo-icon" aria-hidden="false" aria-label="redo SVG icon"></mat-icon>
+      
+                </div>
+                
+
+                <div class="takenotes-close-btn"  (click)="handleEditNote('close')" [mat-dialog-close]="clickToggle">Close</div>
+            </div>
+        
+        </mat-dialog-content> -->

@@ -1,0 +1,46 @@
+<div  style="display:flex;justify-content: center; flex-direction:column; align-items:center; width:100%; height:100vh;">
+
+  <div style="border:1px solid black; border-radius:4px; width:30%; padding:40px; align-items:center; justify-content:center;">
+    <form [formGroup]="loginForm">
+      <div class="container1" >
+        <span class="large-label" >Fundo</span>
+        <span class="large-label1" >Sign in</span>
+        <span class="large-label2">Use Your Fundo Account</span>
+        </div>
+  
+      <div class="form-fields">
+        <mat-form-field appearance="outline">
+          <input   matInput placeholder="Email or phone" formControlName="email">
+          <mat-error *ngIf="submitted && formValidation['email']?.hasError('required')">Email required</mat-error>
+          <mat-error *ngIf="submitted && formValidation['email']?.hasError('email')">Enter correct Email format</mat-error>
+
+        </mat-form-field>
+  
+        <mat-form-field appearance="outline">
+          <input type="password" formControlName="password"   matInput placeholder="Password">
+          <mat-error *ngIf="submitted && formValidation['password']?.hasError('required')">Password required</mat-error>
+          <mat-error *ngIf="submitted && formValidation['password']?.hasError('minlength')">Minimum Password Length is Required</mat-error>
+        </mat-form-field>
+      </div>
+  
+      <div >
+        <button class="btn2">Forgot Password</button>
+      </div>
+      <br>
+      <br>
+      <div class="btn-container">
+        <button style="background-color: white; color:blue; border:0px;">Create account</button>
+        <button mat-stoked-button  (click)="handleLogin()" style="background-color: blue; width:50px; height:30px; color:white;  border-radius:4px;">Login</button>
+      </div>
+      </form>        
+  </div>
+  <div class="container2">
+    <span>Help</span>
+    <span>Privacy</span>
+    <span>Terms</span>
+  </div>
+
+  </div>
+
+
+

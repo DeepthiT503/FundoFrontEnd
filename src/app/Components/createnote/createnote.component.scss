@@ -1,0 +1,125 @@
+.takenotes-main-cnt{
+    height: 45px;
+    padding: 5px;
+    width: 620px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    margin-top: 40px;
+    margin-left: 300px;
+    background-color: white;
+    border: 2px solid #f1f1f1;
+    border-radius: 10px;    
+}
+ 
+ 
+.takenotes-main-cnth{
+    width: 631px;
+    height: max-content;
+    padding: 5px;
+    // border: 1px solid #949494;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+    margin-left: 227px;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+.takenote-input-1-cnt{
+    height: max-content;
+    width: 620px;
+    display: flex;
+}
+
+
+
+.takenote-inputs-1{
+    width: 800px; 
+    height: max-content;
+    word-wrap: break-word;
+    background-color: transparent;
+    color:#171518;
+
+    border: none;
+    outline: none;
+    font-size: larger;
+    font-weight: 600;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+.takenote-inputs-2{
+    width: 612px; 
+    height: max-content;
+    word-wrap: break-word;
+    background-color: transparent;
+    color:#171518;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    border: none;
+    outline: none;
+    font-size: larger;
+    font-weight: 500;
+    margin-top: 12px;
+    margin-left: 10px;
+
+
+ 
+}
+.takenotes-input{
+    background-color: white;
+    color:#eceff1;
+    font-weight: 200;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+.takenotes-icon-main-cnt{
+    display: flex;
+    gap:40px;
+    margin-top: 12px;
+    margin-left: 10px;
+    
+   
+}
+.takenotes-icon-cnt{
+    display: flex;
+    align-items: center;
+    gap:40px;
+    justify-content: center;
+   
+}
+
+.takenotes-undo-icon{
+    display: flex;
+    gap: 30px;
+}
+.takenotes-close-btn{
+    margin-left: 68px;
+    color: rgb(38, 36, 36);
+    font-size: larger;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.col{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 4px;
+    width: 40px;
+    height: 40px;
+    border-radius: 200px;
+    background-color: #d51f1f;
+    border: 0.8px solid grey;
+}
+
+.color-palate-cnt{
+    width: 260px;
+    height: 100px;
+}
+
+//.
